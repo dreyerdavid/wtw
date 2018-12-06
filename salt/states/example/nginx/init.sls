@@ -48,4 +48,3 @@ nginx-config-test:
     - user: root
     - group: root
     - mode: 644
-    
