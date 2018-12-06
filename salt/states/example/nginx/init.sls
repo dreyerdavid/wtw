@@ -41,3 +41,11 @@ nginx-config-test:
     - name: nginx.configtest
     - watch:
       - file: /etc/nginx/sites-available/*
+
+/usr/share/nginx/html/custom_404.html:
+  file.managed:
+    - source: salt://nginx/files/custom_404.html
+    - user: root
+    - group: root
+    - mode: 644
+    
